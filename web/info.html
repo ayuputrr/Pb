@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Desa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 2rem;
+        }
+        header .top-bar h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        header .top-bar p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            float: left;
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+        nav a.active {
+            background-color: #4CAF50;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section {
+            padding: 1rem;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 0.5rem;
+        }
+        .horizontal-gallery {
+            display: flex;
+            overflow-x: auto;
+            gap: 1rem;
+            padding: 1rem;
+        }
+        .horizontal-gallery img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+      
+        <nav>
+            <a href="#">Home</a>
+            <a href="#sekolah">Profil Desa</a>
+            <a href="#kegiatan">Potensi & Pariwisata</a>
+            <a href="#mata-pencaharian">Informasi</a>
+            <a href="#galeri">Galeri</a>
+        </nav>
+    </header>
+
+    <section id="sekolah">
+        <h2 class="section-title">Sekolah-Sekolah di Desa</h2>
+        <div class="card">
+            <h3>SD Negeri 1 XYZ</h3>
+            <p>Jumlah Siswa: 120</p>
+            <p>Fasilitas: Perpustakaan, Lapangan Olahraga</p>
+            <div class="horizontal-gallery">
+                <img src="school1.jpg" alt="Foto SD Negeri 1 XYZ">
+                <img src="school2.jpg" alt="Foto Lapangan SD Negeri 1 XYZ">
+                <img src="school3.jpg" alt="Foto Perpustakaan SD Negeri 1 XYZ">
+            </div>
+        </div>
+        <div class="card">
+            <h3>SMP Negeri 1 XYZ</h3>
+            <p>Jumlah Siswa: 200</p>
+            <p>Fasilitas: Lab Komputer, Perpustakaan</p>
+            <div class="horizontal-gallery">
+                <img src="smp1.jpg" alt="Foto SMP Negeri 1 XYZ">
+                <img src="smp2.jpg" alt="Foto Lab Komputer SMP Negeri 1 XYZ">
+                <img src="smp3.jpg" alt="Foto Perpustakaan SMP Negeri 1 XYZ">
+            </div>
+        </div>
+    </section>
+
+    <section id="kegiatan">
+        <h2 class="section-title">Kegiatan Desa</h2>
+        <div class="card">
+            <h3>Festival Panen Raya</h3>
+            <p>Waktu: 15 Juli 2024</p>
+            <p>Deskripsi: Perayaan hasil panen dengan lomba dan hiburan rakyat.</p>
+        </div>
+        <div class="card">
+            <h3>Lomba Voli Antar RT</h3>
+            <p>Waktu: 5 Agustus 2024</p>
+            <p>Deskripsi: Kompetisi olahraga antar warga desa.</p>
+        </div>
+    </section>
+
+    <section id="mata-pencaharian">
+        <h2 class="section-title">Sumber Mata Pencaharian</h2>
+        <div class="card">
+            <h3>Pertanian</h3>
+            <p>Hasil Utama: Padi, Jagung, dan Sayur-sayuran</p>
+        </div>
+        <div class="card">
+            <h3>Kerajinan Tangan</h3>
+            <p>Produk Unggulan: Tas Anyaman, Hiasan Kayu</p>
+        </div>
+    </section>
+</body>
+</html>

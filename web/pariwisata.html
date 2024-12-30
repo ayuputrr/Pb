@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potensi & Pariwisata</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            float: left;
+            color: white;
+            text-decoration: none;
+            padding: 14px 10px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+        nav a.active {
+            background-color: #4CAF50;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 800px;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .slides {
+            display: none;
+        }
+        .slides img {
+            width: 100%;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.5);
+            user-select: none;
+        }
+        .prev {
+            left: 10px;
+        }
+        .next {
+            right: 10px;
+        }
+        .prev:hover, .next:hover {
+            background-color: #4CAF50;
+        }
+        .dot-container {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 5px;
+            background-color: #ddd;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .dot.active {
+            background-color: #4CAF50;
+        }
+
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .footer-section {
+            flex: 1 1 calc(33.333% - 20px);
+            margin: 10px;
+            min-width: 250px;
+        }
+        .footer-section h3 {
+            margin-bottom: 15px;
+            color: #4CAF50;
+        }
+        .footer-section p, .footer-section a {
+            margin: 5px 0;
+            color: white;
+            text-decoration: none;
+            line-height: 1.6;
+        }
+        .footer-section a:hover {
+            color: #4CAF50;
+        }
+        .footer-bottom {
+            margin-top: 20px;
+            border-top: 1px solid #555;
+            padding-top: 10px;
+            font-size: 0.9em;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="gg.html">Home</a>
+        <a href="profil.html">Profil Desa</a>
+        <a href="pariwisata.html">Potensi & Pariwisata</a>
+        <a href="infofix.html">Informasi</a>
+        <a href="log.html">Login Admin</a>
+    </nav>
+    <header>
+        <h1>Potensi & Pariwisata</h1>
+        <p>Menikmati Keindahan Pantai di Desa Kami</p>
+    </header>
+    <section>
+        <div class="slideshow-container">
+            <div class="slides">
+                <img src="pantai.jpeg" alt="Pantai 1">
+            </div>
+            <div class="slides">
+                <img src="pantai.jpeg" alt="Pantai 2">
+            </div>
+            <div class="slides">
+                <img src="pantai.jpeg" alt="Pantai 3">
+            </div>
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+    <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Alamat Desa</h3>
+            <p>Desa XYZ</p>
+            <p>Kecamatan ABC, Kabupaten DEF</p>
+            <p>Provinsi GHI, Indonesia</p>
+        </div>
+        <div class="footer-section">
+            <h3>Kontak</h3>
+            <p>Telepon: (021) 12345678</p>
+            <p>Email: info@desaxyz.id</p>
+        </div>
+        <div class="footer-section">
+            <h3>Jam Operasional</h3>
+            <p>Senin - Jumat: 08.00 - 16.00</p>
+            <p>Sabtu: 08.00 - 12.00</p>
+            <p>Minggu & Hari Libur: Tutup</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Desa XYZ. Hak Cipta Dilindungi.</p>
+    </div>
+</footer>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function changeSlide(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let slides = document.querySelectorAll(".slides");
+            let dots = document.querySelectorAll(".dot");
+            if (n > slides.length) { slideIndex = 1; }
+            if (n < 1) { slideIndex = slides.length; }
+            slides.forEach(slide => slide.style.display = "none");
+            dots.forEach(dot => dot.className = dot.className.replace(" active", ""));
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Desa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 2rem;
+        }
+        header .top-bar h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        header .top-bar p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            float: left;
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+        nav a.active {
+            background-color: #4CAF50;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section {
+            padding: 1rem;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            margin: 1rem;
+            padding: 1rem;
+            border-radius: 5px;
+            flex: 1;
+            min-width: 300px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 0.5rem;
+        }
+        .horizontal-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 1rem;
+            padding: 1rem;
+        }
+        .horizontal-gallery {
+            display: flex;
+            overflow-x: auto;
+            gap: 1rem;
+            padding: 1rem;
+        }
+        .horizontal-gallery img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#sekolah">Profil Desa</a>
+            <a href="#kegiatan">Potensi & Pariwisata</a>
+            <a href="#mata-pencaharian">Informasi</a>
+            <a href="#galeri">Galeri</a>
+        </nav>
+    </header>
+
+    <section id="sekolah">
+        <h2 class="section-title">Sekolah-Sekolah di Desa</h2>
+        <div class="horizontal-container">
+            <div class="card">
+                <h3>SD Negeri 1 XYZ</h3>
+                <p>Jumlah Siswa: 120</p>
+                <p>Fasilitas: Perpustakaan, Lapangan Olahraga</p>
+                <div class="horizontal-gallery">
+                    <img src="school1.jpg" alt="Foto SD Negeri 1 XYZ">
+                    <img src="school2.jpg" alt="Foto Lapangan SD Negeri 1 XYZ">
+                    <img src="school3.jpg" alt="Foto Perpustakaan SD Negeri 1 XYZ">
+                </div>
+            </div>
+            <div class="card">
+                <h3>SD Negeri 2 XYZ</h3>
+                <p>Jumlah Siswa: 150</p>
+                <p>Fasilitas: Lab Komputer, Ruang Seni</p>
+                <div class="horizontal-gallery">
+                    <img src="sd2-1.jpg" alt="Foto SD Negeri 2 XYZ">
+                    <img src="sd2-2.jpg" alt="Foto Lapangan SD Negeri 2 XYZ">
+                    <img src="sd2-3.jpg" alt="Foto Lab Komputer SD Negeri 2 XYZ">
+                </div>
+            </div>
+            <div class="card">
+                <h3>SD Negeri 3 XYZ</h3>
+                <p>Jumlah Siswa: 100</p>
+                <p>Fasilitas: Ruang Musik, Lapangan Sepak Bola</p>
+                <div class="horizontal-gallery">
+                    <img src="sd3-1.jpg" alt="Foto SD Negeri 3 XYZ">
+                    <img src="sd3-2.jpg" alt="Foto Ruang Musik SD Negeri 3 XYZ">
+                    <img src="sd3-3.jpg" alt="Foto Lapangan SD Negeri 3 XYZ">
+                </div>
+            </div>
+        </div>
+        <h2 class="section-title">Sekolah Menengah Pertama</h2>
+        <div class="horizontal-container">
+            <div class="card">
+                <h3>SMP Negeri 1 XYZ</h3>
+                <p>Jumlah Siswa: 200</p>
+                <p>Fasilitas: Lab Komputer, Perpustakaan</p>
+                <div class="horizontal-gallery">
+                    <img src="smp1.jpg" alt="Foto SMP Negeri 1 XYZ">
+                    <img src="smp2.jpg" alt="Foto Lab Komputer SMP Negeri 1 XYZ">
+                    <img src="smp3.jpg" alt="Foto Perpustakaan SMP Negeri 1 XYZ">
+                </div>
+            </div>
+            <div class="card">
+                <h3>SMP Negeri 2 XYZ</h3>
+                <p>Jumlah Siswa: 180</p>
+                <p>Fasilitas: Laboratorium IPA, Ruang Seni</p>
+                <div class="horizontal-gallery">
+                    <img src="smp2-1.jpg" alt="Foto SMP Negeri 2 XYZ">
+                    <img src="smp2-2.jpg" alt="Foto Laboratorium IPA SMP Negeri 2 XYZ">
+                    <img src="smp2-3.jpg" alt="Foto Ruang Seni SMP Negeri 2 XYZ">
+                </div>
+            </div>
+            <div class="card">
+                <h3>SMP Negeri 3 XYZ</h3>
+                <p>Jumlah Siswa: 170</p>
+                <p>Fasilitas: Lapangan Basket, Perpustakaan</p>
+                <div class="horizontal-gallery">
+                    <img src="smp3-1.jpg" alt="Foto SMP Negeri 3 XYZ">
+                    <img src="smp3-2.jpg" alt="Foto Lapangan Basket SMP Negeri 3 XYZ">
+                    <img src="smp3-3.jpg" alt="Foto Perpustakaan SMP Negeri 3 XYZ">
+                </div>
+            </div>
+        </div>
+        <h2 class="section-title">Sekolah Menengah Atas</h2>
+        <div class="horizontal-container">
+            <div class="card">
+                <h3>SMA Negeri 1 XYZ</h3>
+                <p>Jumlah Siswa: 300</p>
+                <p>Fasilitas: Laboratorium Sains, Lapangan Basket</p>
+                <div class="horizontal-gallery">
+                    <img src="sma1.jpg" alt="Foto SMA Negeri 1 XYZ">
+                    <img src="sma2.jpg" alt="Foto Laboratorium Sains SMA Negeri 1 XYZ">
+                    <img src="sma3.jpg" alt="Foto Lapangan Basket SMA Negeri 1 XYZ">
+                </div>
+            </div>
+            <div class="card">
+                <h3>SMA Negeri 2 XYZ</h3>
+                <p>Jumlah Siswa: 280</p>
+                <p>Fasilitas: Ruang Musik, Perpustakaan</p>
+                <div class="horizontal-gallery">
+                    <img src="sma2-1.jpg" alt="Foto SMA Negeri 2 XYZ">
+                    <img src="sma2-2.jpg" alt="Foto Ruang Musik SMA Negeri 2 XYZ">
+                    <img src="sma2-3.jpg" alt="Foto Lapangan Basket SMA Negeri 2 XYZ">
+                </div>
+
+            </div>
+            <div class="card">
+                <h3>SMA Negeri 3 XYZ</h3>
+                <p>Jumlah Siswa: 270</p>
+                <p>Fasilitas: Laboratorium IPA, Perpustakaan</p>
+                <div class="horizontal-gallery">
+                    <img src="sma3-1.jpg" alt="Foto SMA Negeri 3 XYZ">
+                    <img src="sma3-2.jpg" alt="Foto Laboratorium IPA SMA Negeri 3 XYZ">
+                    <img src="sma3-3.jpg" alt="Foto Perpustakaan SMA Negeri 3 XYZ">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kegiatan">
+        <h2 class="section-title">Kegiatan Desa</h2>
+        <div class="card">
+            <h3>Festival Panen Raya</h3>
+            <p>Waktu: 15 Juli 2024</p>
+            <p>Deskripsi: Perayaan hasil panen dengan lomba dan hiburan rakyat.</p>
+        </div>
+        <div class="card">
+            <h3>Lomba Voli Antar RT</h3>
+            <p>Waktu: 5 Agustus 2024</p>
+            <p>Deskripsi: Kompetisi olahraga antar warga desa.</p>
+        </div>
+    </section>
+
+    <section id="mata-pencaharian">
+        <h2 class="section-title">Sumber Mata Pencaharian</h2>
+        <div class="card">
+            <h3>Pertanian</h3>
+            <p>Hasil Utama: Padi, Jagung, dan Sayur-sayuran</p>
+        </div>
+        <div class="card">
+            <h3>Kerajinan Tangan</h3>
+            <p>Produk Unggulan: Tas Anyaman, Hiasan Kayu</p>
+        </div>
+    </section>
+</body>    
+</html>        

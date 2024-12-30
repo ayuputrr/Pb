@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Desa</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            position: relative;
+            background-image: url('pekon.jpeg'); /* Ganti URL ini dengan gambar latar Anda */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            float: left;
+            color: white;
+            text-decoration: none;
+            padding: 14px 10px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+        nav a.active {
+            background-color: #4CAF50;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .two-columns {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .column {
+            flex: 1;
+            min-width: 300px;
+            margin: 10px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .column img {
+            width: 100%;
+            border-radius: 50%;
+        }
+        .column h3 {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="gg.html">Home</a>
+        <a href="profil.html">Profil Desa</a>
+        <a href="pariwisata.html">Potensi & Pariwisata</a>
+        <a href="hh.html">Informasi</a>
+        <a href="admin.html">Login Admin</a>
+    </nav>
+    <header>
+        <h1>Selamat Datang di Desa Pulau Benawang</h1>
+        <p>Pulau Benawang - Tanggamus</p>
+    </header>
+    <section class="content">
+        <h2>Desa Pulau Benawang</h2>
+        <p>
+            Desa Pulau Benawang terletak di sebelah barat ibu kota kabupaten Tanggamus.
+            Desa ini memiliki berbagai potensi wisata dan budaya lokal yang menarik.
+        </p>
+        <div class="two-columns">
+            <div class="column">
+                <img src="pekon.jpeg" alt="Foto Kepala Desa">
+                <h3>Perangkat Desa</h3>
+                <p>Para pejabat desa yang berwenang</p>
+            </div>
+            <div class="column">
+                <h3>Kepala Desa</h3>
+                <p>Nama Kepala Desa</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
