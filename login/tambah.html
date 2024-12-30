@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tambah Perangkat Desa</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            position: relative;
+            background-image: url('pekon.jpeg'); /* Ganti URL ini dengan gambar latar Anda */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            float: left;
+            color: white;
+            text-decoration: none;
+            padding: 14px 10px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+        nav a.active {
+            background-color: #4CAF50;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+</head>
+<body>
+    <nav>
+        <a href="gg.html">Home</a>
+        <a href="profil.html">Profil Desa</a>
+        <a href="pariwisata.html">Potensi & Pariwisata</a>
+        <a href="hh.html">Informasi</a>
+        <a href="admin.html">Login Admin</a>
+    </nav>
+    <header>
+        <h1>Form Tambah Kepala Desa</h1>
+        <p>Masukkan data kepala desa baru</p>
+    </header>
+    <section>
+        <div class="content">
+            <form>
+                <label for="nama">Nama Kepala Desa</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama kepala desa" required>
+                
+                <label for="masa-jabatan">Masa Jabatan</label>
+                <input type="text" id="masa-jabatan" name="masa-jabatan" placeholder="Masukkan masa jabatan" required>
+                
+                <label for="foto">Upload Foto</label>
+                <input type="file" id="foto" name="foto" accept="image/*">
+                
+                <button type="submit">Simpan</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

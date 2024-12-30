@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Desa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 2rem;
+        }
+        header .top-bar h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        header .top-bar p {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            height: 50px;
+        }
+        nav a {
+            float: left;
+            color: white;
+            text-decoration: none;
+            padding: 14px 10px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+        nav a.active {
+            background-color: #4CAF50;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section {
+            padding: 1rem;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            margin: 1rem;
+            padding: 1rem;
+            border-radius: 5px;
+            flex: 1;
+            min-width: 300px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 0.5rem;
+        }
+        .horizontal-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 1rem;
+            padding: 1rem;
+        }
+        .horizontal-gallery {
+            display: flex;
+            justify-content: center; /* Pusatkan gambar di tengah */
+            padding: 1rem 0;
+        }
+        
+        .horizontal-gallery img {
+            width: 300px; /* Lebih lebar */
+            height: 200px; /* Ukuran seragam */
+            object-fit: cover; /* Sesuaikan gambar tanpa distorsi */
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="gg.html">Home</a>
+            <a href="profil.html">Profil Desa</a>
+            <a href="pariwisata.html">Potensi & Pariwisata</a>
+            <a href="infofix.html">Informasi</a>
+            <a href="log.html">Login Admin</a>
+        </nav>
+    </header>
+
+    <section id="sekolah">
+        <h2 class="section-title">Sekolah-Sekolah di Desa</h2>
+        <div class="horizontal-container">
+            <!-- SD Negeri 1 XYZ -->
+            <div class="card">
+                <h3>SD Negeri 1 XYZ</h3>
+                <p>Jumlah Siswa: 120</p>
+                <p>Fasilitas: Perpustakaan, Lapangan</p>
+                <div class="horizontal-gallery">
+                    <img src="school1.jpg" alt="Foto SD Negeri 1 XYZ">
+                </div>
+                <p>SD Negeri 1 XYZ adalah sekolah yang berkomitmen memberikan pendidikan berkualitas dengan fasilitas modern seperti perpustakaan lengkap dan lapangan olahraga serbaguna.</p>
+                <a href="https://sdnegeri1xyz.com" target="_blank">Kunjungi Website</a>
+            </div>
+    
+            <!-- SD Negeri 2 XYZ -->
+            <div class="card">
+                <h3>SD Negeri 2 XYZ</h3>
+                <p>Jumlah Siswa: 150</p>
+                <p>Fasilitas: Lab Komputer, Ruang Seni</p>
+                <div class="horizontal-gallery">
+                    <img src="sd2-1.jpg" alt="Foto SD Negeri 2 XYZ">
+                </div>
+                <p>SD Negeri 2 XYZ unggul dalam bidang teknologi dan seni, menawarkan pengalaman belajar yang mendukung kreativitas dan kecerdasan digital siswa.</p>
+                <a href="https://sdnegeri2xyz.com" target="_blank">Kunjungi Website</a>
+            </div>
+    
+            <!-- SD Negeri 3 XYZ -->
+            <div class="card">
+                <h3>SD Negeri 3 XYZ</h3>
+                <p>Jumlah Siswa: 100</p>
+                <p>Fasilitas: Ruang Musik, Lapangan Bola</p>
+                <div class="horizontal-gallery">
+                    <img src="sd3-1.jpg" alt="Foto SD Negeri 3 XYZ">
+                </div>
+                <p>SD Negeri 3 XYZ mendukung siswa untuk berkembang di bidang musik dan olahraga, dilengkapi fasilitas unggulan seperti ruang musik modern dan lapangan sepak bola.</p>
+                <a href="https://sdnegeri3xyz.com" target="_blank">Kunjungi Website</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="SMP">
+        <h2 class="section-title">SMP-SMP di Desa</h2>
+        <div class="horizontal-container">
+            <!-- SMP Negeri 1 XYZ -->
+            <div class="card">
+                <h3>SMP Negeri 1 XYZ</h3>
+                <p>Jumlah Siswa: 200</p>
+                <p>Fasilitas: Lab Komputer, Perpustakaan</p>
+                <div class="horizontal-gallery">
+                    <img src="smp1.jpg" alt="Foto SMP Negeri 1 XYZ">
+                </div>
+                <p>SMP Negeri 1 XYZ unggul dalam bidang pendidikan dan penelitian, menawarkan pengalaman belajar yang mendukung kreativitas dan kecerdasan digital siswa.</p>
+                <a href="https://smpnegeri1xyz.com" target="_blank">Kunjungi Website</a>
+            </div>
+    
+            <!-- SMP Negeri 2 XYZ -->
+            <div class="card">
+                <h3>SMP Negeri 2 XYZ</h3>
+                <p>Jumlah Siswa: 250</p>
+                <p>Fasilitas: Lab Komputer, Perpustakaan</p>
+                <div class="horizontal-gallery">
+                    <img src="smp2.jpg" alt="Foto SMP Negeri 2 XYZ">
+                </div>
+                <p>SMP Negeri 2 XYZ unggul dalam bidang pendidikan dan penelitian, menawarkan pengalaman belajar yang mendukung kreativitas dan kecerdasan digital siswa.</p>
+                <a href="https://smpnegeri2xyz.com" target="_blank">Kunjungi Website</a>
+            </div>
+    
+            <!-- SMP Negeri 3 XYZ -->
+            <div class="card">
+                <h3>SMP Negeri 3 XYZ</h3>
+                <p>Jumlah Siswa: 180</p>
+                <p>Fasilitas: Lab Komputer, Perpustakaan</p>
+                <div class="horizontal-gallery">
+                    <img src="smp3.jpg" alt="Foto SMP Negeri 3 XYZ">
+                </div>
+                <p>SMP Negeri 3 XYZ unggul dalam bidang pendidikan dan penelitian, menawarkan pengalaman belajar yang mendukung kreativitas dan kecerdasan digital siswa.</p>
+                <a href="https://smpnegeri3xyz.com" target="_blank">Kunjungi Website</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="SMA">
+        <h2 class="section-title">SMA-SMA di Desa</h2>
+        <div class="horizontal-container">
+            <!-- SMA Negeri 1 XYZ -->
+            <div class="card">
+                <h3>SMA Negeri 1 XYZ</h3>
+                <p>Jumlah Siswa: 300</p>
+                <p>Fasilitas: Lab Komputer, Perpustakaan</p>
+                <div class="horizontal-gallery">
+                    <img src="sma1.jpg" alt="Foto SMA Negeri 1 XYZ">
+                </div>
+                <p>SMA Negeri 1 XYZ unggul dalam bidang pendidikan dan penelitian, menawarkan pengalaman belajar yang mendukung kreativitas dan kecerdasan digital siswa.</p>
+                <a href="https://smknegeri1xyz.com" target="_blank">Kunjungi Website</a>
+            </div>
+    
+            <!-- SMA Negeri 2 XYZ -->
+            <div class="card">
+                <h3>SMA Negeri 2 XYZ</h3>
+                <p>Jumlah Siswa: 350</p>
+                <p>Fasilitas: Lab Komputer, Perpustakaan</p>
+                <div class="horizontal-gallery">
+                    <img src="sma2.jpg" alt="Foto SMA Negeri 2 XYZ">
+                </div>
+                <p>SMA Negeri 2 XYZ unggul dalam bidang pendidikan dan penelitian, menawarkan pengalaman belajar yang mendukung kreativitas dan kecerdasan digital siswa.</p>
+                <a href="https://smknegeri2xyz.com" target="_blank">Kunjungi Website</a>
+            </div>
+    
+            <!-- SMA Negeri 3 XYZ -->
+            <div class="card">
+                <h3>SMA Negeri 3 XYZ</h3>
+                <p>Jumlah Siswa: 280</p>
+                <p>Fasilitas: Lab Komputer, Perpustakaan</p>
+                <div class="horizontal-gallery">
+                    <img src="sma3.jpg" alt="Foto SMA Negeri 3 XYZ">
+                </div>
+                <p>SMA Negeri 3 XYZ unggul dalam bidang pendidikan dan penelitian, menawarkan pengalaman belajar yang mendukung kreativitas dan kecerdasan digital siswa.</p>
+                <a href="https://smknegeri3xyz.com" target="_blank">Kunjungi Website</a>
+            </div>
+        </div>
+    </section>      
+
+    <section id="kegiatan">
+        <h2 class="section-title">Kegiatan Desa</h2>
+        <div class="card">
+            <h3>Festival Panen Raya</h3>
+            <p>Waktu: 15 Juli 2024</p>
+            <p>Deskripsi: Perayaan hasil panen dengan lomba dan hiburan rakyat.</p>
+        </div>
+        <div class="card">
+            <h3>Lomba Voli Antar RT</h3>
+            <p>Waktu: 5 Agustus 2024</p>
+            <p>Deskripsi: Kompetisi olahraga antar warga desa.</p>
+        </div>
+    </section>
+
+    <section id="mata-pencaharian">
+        <h2 class="section-title">Sumber Mata Pencaharian</h2>
+        <div class="card">
+            <h3>Pertanian</h3>
+            <p>Hasil Utama: Padi, Jagung, dan Sayur-sayuran</p>
+        </div>
+        <div class="card">
+            <h3>Kerajinan Tangan</h3>
+            <p>Produk Unggulan: Tas Anyaman, Hiasan Kayu</p>
+        </div>
+    </section>
+
+</body>
+</html>
